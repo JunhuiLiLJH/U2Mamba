@@ -21,11 +21,11 @@ Download the DUTS dataset (DUTS-TR training set)
 Organize the dataset in the following structure:
 
 plaintext
-train_data/
-└── DUTS-TR/
-    └── DUTS-TR/
-        ├── im_aug/    # Training images
-        └── gt_aug/    # Corresponding ground truth masks
+train_data/\\
+└── DUTS-TR/\\
+    └── DUTS-TR/\\
+        ├── im_aug/    # Training images\\
+        └── gt_aug/    # Corresponding ground truth masks\\
         
 Model Architecture
 The key modification from the original U2Net is the integration of Mamba layers through the MambaLayer class, which:
