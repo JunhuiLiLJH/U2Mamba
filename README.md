@@ -3,13 +3,13 @@ This repository contains the training code for a modified U2Net model integrated
 
 Overview
 This project implements a hybrid architecture combining the U2Net (U-Net squared) model with Mamba (State Space Model) layers to enhance salient object detection performance. The Mamba layers are integrated to capture long-range dependencies more efficiently while maintaining the U-Net's strong local feature extraction capabilities.
-Requirements
-Python 3.10
-PyTorch
-torchvision
-torchmetrics
-numpy
-mamba-ssm
+Requirements<br>
+Python 3.10<br>
+PyTorch<br>
+torchvision<br>
+torchmetrics<br>
+numpy<br>
+mamba-ssm<br>
 
 Install dependencies via pip:
 bash
@@ -21,11 +21,11 @@ Download the DUTS dataset (DUTS-TR training set)
 Organize the dataset in the following structure:
 
 plaintext
-train_data/\\
-└── DUTS-TR/\\
-    └── DUTS-TR/\\
-        ├── im_aug/    # Training images\\
-        └── gt_aug/    # Corresponding ground truth masks\\
+train_data/<br>
+└── DUTS-TR/<br>
+    └── DUTS-TR/<br>
+        ├── im_aug/    # Training images<br>
+        └── gt_aug/    # Corresponding ground truth masks<br>
         
 Model Architecture
 The key modification from the original U2Net is the integration of Mamba layers through the MambaLayer class, which:
